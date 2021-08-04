@@ -12,12 +12,12 @@ interface IProps {
 const List = ({ taskNo, taskName, handleRemove }: IProps) => {
   const [taskDone, setTaskDone] = useState<boolean>(false);
   return (
-    <div className="list-single-div">
+    <div className="list-single-div mb-2">
       <div className={`${taskDone && "task-done"} task-name-single rounded-1`}>
         <h5 style={{ margin: "0" }}>{taskName}</h5>
       </div>
       <button
-        className="btn task-done-btn ms-3"
+        className="btn task-done-btn ms-2"
         type="button"
         onClick={() => setTaskDone(!taskDone)}
       >

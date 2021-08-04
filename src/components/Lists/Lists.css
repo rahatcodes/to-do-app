@@ -3,6 +3,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.add-new-task-form {
+  width: 100%;
+}
 .task-input input {
   border-bottom: 2px solid #443f79 !important;
   font-size: 1.2rem;

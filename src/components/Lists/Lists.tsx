@@ -18,13 +18,14 @@ const Lists = () => {
 
   const [taskList, setTaskList] = useState<Itask[]>([]);
 
-  const onClick = () => {
+  const handleTaskAdd = (e: React.FormEvent<HTMLFormElement>) => {
     setTaskList([...taskList, task]);
     setTask({
       taskNo: taskCount + 1,
       taskName: "",
     });
     setTaskCount(taskCount + 1);
+    e.preventDefault();
   };
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -54,21 +55,23 @@ const Lists = () => {
           />
         ))}
         <div className="input-group task-input">
-          <input
-            value={task.taskName}
-            onChange={onChange}
-            name="taskName"
-            type="text"
-            className="form-control border-0 rounded-0"
-            placeholder="Add task"
-          />
-          <button
-            onClick={onClick}
-            className="btn rounded-1 ms-3"
-            type="button"
+          <form
+            onSubmit={handleTaskAdd}
+            className="add-new-task-form d-flex justify-content-center"
           >
-            <FontAwesomeIcon icon={faPlus} />
-          </button>
+            <input
+              value={task.taskName}
+              onChange={onChange}
+              name="taskName"
+              type="text"
+              className="form-control border-0 rounded-0"
+              placeholder="Add task"
+              required
+            />
+            <button className="btn rounded-1 ms-3" type="submit">
+              <FontAwesomeIcon icon={faPlus} />
+            </button>
+          </form>
         </div>
       </div>
     </section>

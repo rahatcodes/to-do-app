@@ -1,5 +1,4 @@
 .list-single-div {
-  margin-bottom: 1em;
   display: flex;
   align-items: center;
 }
@@ -11,6 +10,7 @@
   width: 100%;
   background-color: rgba(250, 169, 99, 0.4);
   padding: 0.375rem 1rem;
+  overflow-wrap: break-word;
 }
 .task-name-single h5 {
   font-size: 1.2rem;
@@ -19,7 +19,6 @@
 }
 .task-done-btn {
   background-color: #443f79;
-
   color: white;
   font-size: 1.2rem;
 }
