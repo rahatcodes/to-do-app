@@ -1,0 +1,26 @@
+.todo-main-div {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.task-input input {
+  border-bottom: 2px solid #443f79 !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none;
+}
+.task-input input:focus {
+  box-shadow: none;
+}
+.task-input button {
+  background-color: #faa963;
+  color: white;
+  font-size: 1.2rem;
+}
+.task-input button:hover {
+  color: white;
+}
+
+.task-input button:focus {
+  box-shadow: none;
+}

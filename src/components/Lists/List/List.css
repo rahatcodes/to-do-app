@@ -1,0 +1,39 @@
+.list-single-div {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+.task-done {
+  text-decoration: line-through;
+  color: #fa6264;
+}
+.task-name-single {
+  width: 100%;
+  background-color: rgba(250, 169, 99, 0.4);
+  padding: 0.375rem 1rem;
+}
+.task-name-single h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.813rem;
+}
+.task-done-btn {
+  background-color: #443f79;
+
+  color: white;
+  font-size: 1.2rem;
+}
+.task-delete-btn {
+  background-color: #fa6264;
+  color: white;
+  font-size: 1.2rem;
+}
+.task-done-btn:hover,
+.task-delete-btn:hover {
+  color: white;
+}
+
+.task-done-btn:focus,
+.task-delete-btn:focus {
+  box-shadow: none;
+}
