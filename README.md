@@ -1,6 +1,6 @@
 # To-Do App
 
-![To-Do App](https://raw.githubusercontent.com/mekaiser/silotech-client/main/src/images/silotech-git-cover.png)
+![To-Do App](https://raw.githubusercontent.com/mekaiser/to-do-app/main/src/images/to-do-app-github-cover.jpg)
 
 ## FEATURES
 
